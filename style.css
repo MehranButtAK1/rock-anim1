@@ -1,0 +1,73 @@
+body {
+    font-size: 20px;
+    background-color: #0066b2;
+}
+.circle{
+ width: 48%;
+ height: 35%;
+ border: none 1px;
+ margin-top: 200px;
+ border-radius: 180px;
+ padding: 1px;
+ background-color: #7CB9E8;
+ overflow: hidden;
+ 
+}
+.char{
+  font-size: 1.6rem;
+  
+}
+.rock{
+  display: flex;
+    justify-content: center;
+    rotate: 25deg;
+  margin-top: 30px;
+  animation: fly 3s linear infinite;
+  font-size: 1.6rem;
+  position: relative;
+  bottom: 8px;
+    
+}
+@keyframes fly{
+  0%{transform: translate(0px,0)}
+ 25%{transform: translate(0,10px)}
+ 
+ 50%{transform: translate(0,0)}
+ 75%{transform: translate(0,-10px)}
+100%{transform: translate(0,0)}
+
+}
+.load{
+  font-size: 18px;
+  color: white;
+  position: relative;
+  bottom: 20px;
+  animation: glow 1.2s linear infinite;
+  
+}
+@keyframes glow{
+  0%{opacity: 0}
+  10%{color: white}
+  20%{color: yellow}
+  40%{color: darkblue}
+  50%{opacity: 1}
+  60%{color: red}
+  80%{color: blueviolet}
+  100%{opacity: 0}
+}
+#char1{
+  left: 10px;
+  position: relative;
+  top: 12px;
+  animation: char 3.5s linear infinite;
+  
+}
+#char2{
+ position: relative;
+ bottom: 20px;
+ animation: char 2.5s linear infinite;
+}
+@keyframes char{
+  0%{transform: translateX(100px)}
+ 100%{transform: translateX(-100px)}
+}
